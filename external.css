@@ -1,0 +1,90 @@
+/* ====== BODY ====== */
+body{
+    background:#3a3a3a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ====== CALCULATOR BODY ====== */
+#layout{
+    background:black;
+    border-radius:25px;
+    padding:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.6);
+    border:none;
+}
+
+/* ====== DISPLAY ====== */
+#a input{
+    background:#2e2e2e;
+    color:white;
+    font-size:32px;
+    text-align:right;
+    border:none;
+    border-radius:12px;
+    padding-right:15px;
+}
+
+/* ====== BUTTON CONTAINER ====== */
+#b{
+    gap:12px;
+    border:none;
+}
+
+/* ====== BUTTON WRAPPER ====== */
+#b div{
+    border:none;
+    background:#5a5a5a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ====== COMMON BUTTON ====== */
+#b button{
+    width:100%;
+    height:100%;
+    border:none;
+    font-size:24px;
+    color:white;
+    background:#5a5a5a;
+    cursor:pointer;
+    transition: transform 0.1s ease, filter 0.1s ease;
+}
+#b button:hover{
+    filter: brightness(1.15);
+    transform: scale(0.95);
+}
+/* ====== TOP BUTTONS (AC, %, 00) ====== */
+.topbtn{
+    background:#a5a5a5 !important;
+    color:black !important;
+}
+
+/* ====== RIGHT ORANGE BUTTONS ====== */
+.leftbtn{
+    background:#f39c12 !important;
+    color:white;
+}
+
+/* ====== NUMBER BUTTONS ====== */
+.btn{
+    background:#5a5a5a;
+}
+
+
+#b div:nth-last-child(4) button{
+    border-radius:45px;
+    text-align:left;
+    padding-left:30px;
+}
+
+
+/* ---------- ORANGE OPERATOR HOVER ---------- */
+.leftbtn:hover{
+    filter: brightness(1.2);
+    transform: scale(0.95);
+}
